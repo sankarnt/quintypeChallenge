@@ -1,0 +1,15 @@
+{
+  "name": "diamondsweeper",
+  "version": "1.0.0",
+  "description": "sweep all the diamonds, then you win!!!",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sankar",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "http-server": "^0.11.1"
+  }
+}

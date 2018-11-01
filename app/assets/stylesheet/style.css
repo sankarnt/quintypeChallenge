@@ -1,0 +1,32 @@
+.mine-wrapper {
+    margin: 0px auto;
+}
+
+.mine-box{
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 50px;
+    border: 1px solid #dedede;
+    box-shadow: 0px 0px 1px #dedede;
+}
+
+.mine-box-puzzle-bg {
+    background: url('../images/question.png') no-repeat;
+    background-size: cover;
+}
+
+.mine-box-diamond-bg {
+    background: url('../images/diamond.png') no-repeat;
+    background-size: cover;
+}
+
+.mine-box-clue-bg {
+    background: url('../images/arrow.png') no-repeat;
+    background-size: cover;
+}
+

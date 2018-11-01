@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="mineSweeper">
+
+<head>
+    <link rel="stylesheet" href="app/assets/stylesheet/style.css">
+</head>
+
+<body>
+    <div ng-controller="mineSweepController" class="mine-wrapper">
+        <div ng-repeat="box in squares track by $index" class="mine-box mine-box-puzzle-bg" ng-click="revealPuzzle(box, $event)" ng-class="box.isRevealed ? 'mine-box-diamond-bg' : ''">
+        </div> 
+        
+    </div>
+</body>
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="app/app.js"></script>
+<script src="app/gameController.js"></script>
+</html>
+
+<!-- 
+Copyright 2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

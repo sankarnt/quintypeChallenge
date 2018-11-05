@@ -3,15 +3,9 @@
 }
 
 .mine-box{
-    width: 50px;
-    height: 50px;
-    margin: 3px;
-    padding: 5px;
-    text-align: center;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 50px;
-    border: 1px solid #dedede;
+    padding-top: calc(100% /8);
+    width: calc(100% /8);
+    float: left;
     box-shadow: 0px 0px 1px #dedede;
 }
 
@@ -25,8 +19,18 @@
     background-size: cover;
 }
 
-.mine-box-clue-bg {
+.mine-box-clue-bg-right {
     background: url('../images/arrow.png') no-repeat;
     background-size: cover;
+}
+
+.mine-box-clue-bg-left {
+    background: url('../images/arrow.png') no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+}
+
+.breakLine {
+    clear: left;
 }
 

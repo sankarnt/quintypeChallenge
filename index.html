@@ -2,12 +2,13 @@
 <html ng-app="mineSweeper">
 
 <head>
+    <title>Minesweeper</title>
     <link rel="stylesheet" href="app/assets/stylesheet/style.css">
 </head>
 
 <body>
     <div ng-controller="mineSweepController" class="mine-wrapper">
-        <div ng-repeat="box in squares track by $index" class="mine-box mine-box-puzzle-bg" ng-click="revealPuzzle(box, $event)" ng-class="box.isRevealed ? 'mine-box-diamond-bg' : ''">
+        <div ng-repeat="box in squares track by $index" class="mine-box mine-box-puzzle-bg" ng-click="revealPuzzle(box, $event)" ng-class="{'mine-box-diamond-bg' : box.isRevealed, 'breakLine': getBreakLine($index)}">
         </div> 
         
     </div>
